@@ -48,7 +48,7 @@ setTimeout(function () {
                 }, 1000);
 
             } else {
-                valid.textContent = "Must be greater than two letters.";
+                valid.textContent = ("Must be greater than two letters.")
             }
 
         }
