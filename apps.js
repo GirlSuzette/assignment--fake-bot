@@ -25,32 +25,24 @@ setTimeout(function () {
     document.querySelector('#inputYouName').addEventListener('keypress', function (e) {
         var key = e.which || e.keyCode;
         if (key === 13) { // 13 is enter
-
-
             if (smsInput.value.length > 1) {
-
-
                 if (smsInput.value.length > 6) {
                     smsLong.textContent = "That’s a long name."
                     smsLong.style.display = "block";
                     valid.style.display = "none";
-
                 } else if (smsInput.value.length < 6) {
                     smsLong.innerHTML = "That’s a short name."
                     smsLong.style.display = "block";
                     valid.style.display = "none";
                 }
-
                 setTimeout(function () {
                     sms.style.display = "block"
                     sms.textContent = "Nice to meet you, " + smsInput.value + "!";
                 }, 1000);
 
             } else {
-                valid.textContent = ("Must be greater than two letters.")
+                valid.textContent = "Must be greater than two letters."
             }
-
         }
-
     });
 }, 4000);
