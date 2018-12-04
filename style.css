@@ -12,7 +12,7 @@ input {
     width: 565px;
     height: 646px;
     margin: 0 auto;
-    padding: 30px 40px 40px 40px;
+    padding: 50px 40px 40px 40px;
     border: 1px solid #E6E6E6;
     background: #faf9f9;
 }
@@ -20,6 +20,7 @@ input {
 #inputYouName {
     padding: 13px;
     display: none;
+    border-radius: 5px 15px;
 
 }
 
@@ -27,8 +28,8 @@ input {
 .occupation,
 .iLike {
     color: white;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 5px 15px;
+    border-radius: 5px 15px;
     background: #999;
     width: 50%;
     display: none;
@@ -39,12 +40,21 @@ input {
     position: relative;
     left: 267px;
     background: #2f89fc;
-    border-radius: 5px;
-    padding: 18px;
+    border-radius: 5px 15px;
+    padding: 5px 15px;
     width: 35%;
     display: none;
 }
 
 #valid {
     color: black;
+}
+
+
+#writeSms {
+    position: absolute;
+    bottom: 15px;
+    padding: 13px 10px;
+    width: 74%;
+    border-radius: 5px 15px;
 }

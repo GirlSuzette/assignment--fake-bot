@@ -1,22 +1,22 @@
-var sms1 = document.querySelector(".myName");
-var sms2 = document.querySelector(".occupation");
-var sms3 = document.querySelector(".iLike");
+var smsHello = document.querySelector(".myName");
+var smsOcuup = document.querySelector(".occupation");
+var smsILike = document.querySelector(".iLike");
 var smsInput = document.querySelector("#inputYouName");
 var valid = document.querySelector("#valid")
-var sms5 = document.querySelector(".long");
-var sms6 = document.querySelector(".regards");
+var smsLong = document.querySelector(".long");
+var sms = document.querySelector(".regards");
 
 
 setTimeout(function () {
-    sms1.style.display = "block";
+    smsHello.style.display = "block";
 }, 1000);
 
 setTimeout(function () {
-    sms2.style.display = "block";
+    smsOcuup.style.display = "block";
 }, 2000);
 
 setTimeout(function () {
-    sms3.style.display = "block";
+    smsILike.style.display = "block";
 }, 3000);
 
 
@@ -30,20 +30,21 @@ setTimeout(function () {
 
             if (smsInput.value.length > 1) {
 
+
                 if (smsInput.value.length > 6) {
-                    sms5.textContent = "That’s a long name."
-                    sms5.style.display = "block";
+                    smsLong.textContent = "That’s a long name."
+                    smsLong.style.display = "block";
                     valid.style.display = "none";
 
                 } else if (smsInput.value.length < 6) {
-                    sms5.innerHTML = "That’s a short name."
-                    sms5.style.display = "block";
+                    smsLong.innerHTML = "That’s a short name."
+                    smsLong.style.display = "block";
                     valid.style.display = "none";
                 }
 
                 setTimeout(function () {
-                    sms6.style.display = "block"
-                    sms6.textContent = "Nice to meet you, " + smsInput.value + "!";
+                    sms.style.display = "block"
+                    sms.textContent = "Nice to meet you, " + smsInput.value + "!";
                 }, 1000);
 
             } else {
