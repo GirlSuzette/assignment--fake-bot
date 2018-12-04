@@ -6,6 +6,7 @@ var valid = document.querySelector("#valid")
 var smsLong = document.querySelector(".long");
 var sms = document.querySelector(".regards");
 
+
 setTimeout(function () {
     smsHello.style.display = "block";
 }, 1000);

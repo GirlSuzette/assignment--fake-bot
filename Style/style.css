@@ -14,7 +14,7 @@ input {
     margin: 0 auto;
     padding: 50px 40px 40px 40px;
     border: 1px solid #E6E6E6;
-    background-image: url("./imagen/img.jpg");
+    background-image: url("../imagen/img.jpg");
 }
 
 #inputYouName {
